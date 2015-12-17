@@ -1,0 +1,88 @@
+<!-- Inspired by Helen Carey's Lewi++ Webpage -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+
+	<!-- STYLES -->
+  		<link rel="stylesheet" href="css/style.css">
+		
+		<style></style>
+	<!-- SCRIPTS -->
+	 	<script language="javascript" type="text/javascript" src="js/p5js/p5.js"></script>
+		<script language="javascript" src="js/p5js/p5.dom.js"></script>
+	  	<script language="javascript" type="text/javascript" src="Nature_Bee/sketch.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div id='container'>
+		<header>
+			<h1>EVERYDAY PATTERNS</h1>
+		</header>
+    
+    <iframe src="" width="775" height="475"></iframe>
+		
+		<div id='main'>
+
+  
+			<div id="room">
+			  
+				<img src="ImagesHTML/Gallery/Gallery.jpg" alt="empty room">
+				
+				<div id="canvas"></div>
+				<div id="btns"> 
+				</div>
+			</div>
+			
+
+			<div id="panel">
+				<div id="panel-txt">
+					<hr>
+					<h3>Select Pattern</h3>
+					<hr>
+					
+					<div id="tabs">
+						  <ul>
+						    <li data-pattern="Nature_Bee/index.html"><a id="Bee"><img src="ImagesHTML/Buttons/Bee.png"></a></li>
+						    <li data-pattern="Nature_Spider/index.html"> <a id="Spider"><img src="ImagesHTML/Buttons/Spider.png"></a></li>
+						    <li data-pattern="Nature_Ant/index.html"> <a id="Ant"><img src="ImagesHTML/Buttons/Grass.png"></a></li>
+						    <li data-pattern="Table_Office/index.html"> <a id="Office"><img src="ImagesHTML/Buttons/Office.png"></a></li>
+						    <li data-pattern="Table_Kitchen/index.html"> <a id="Kitchen"><img src="ImagesHTML/Buttons/Kitchen.png"></a></li>
+						    <li data-pattern="Table_Coloring/index.html"> <a id="Coloring"><img src="ImagesHTML/Buttons/Coloring.png"></a></li>
+                <li data-pattern="Scene_Wall/index.html"> <a id="Wall"><img src="ImagesHTML/Buttons/Wall.png"></a></li>
+						    <li data-pattern="Scene_Crosswalk/index.html"> <a id="Crosswalk"><img src="ImagesHTML/Buttons/Crosswalk.png"></a></li>
+						    <li data-pattern="Scene_Basketball/index.html"> <a id="Basketball"><img src="ImagesHTML/Buttons/Net.png"></a></li>
+						    <li data-pattern="Floor_Entrance/index.html"> <a id="Entrance"><img src="ImagesHTML/Buttons/Entrance.png"></a></li>
+						    <li data-pattern="Floor_Subway/index.html"> <a id="Subway"><img src="ImagesHTML/Buttons/Subway.png"></a></li>
+						    <li data-pattern="Floor_Corridor/index.html"> <a id="Corridor"><img src="ImagesHTML/Buttons/Corridor.png"></a></li>
+						    <li data-pattern="Css_Star/index.html"> <a id="Star"><img src="ImagesHTML/Buttons/Stars.png"></a></li>
+						    <li data-pattern="Css_Disco/index.html"> <a id="Disco"><img src="ImagesHTML/Buttons/Disco.png"></a></li>
+						    <li data-pattern="Css_Blueprint/index.html"> <a id="Blueprint"><img src="ImagesHTML/Buttons/Blueprint.png"></a></li>
+						  </ul>
+
+				</div> 
+					
+
+			</div> 
+			</div> 
+	
+
+		</div>
+		
+	</div>
+<script>
+</script>
+  <script>
+    $('li').click(function(){
+      $("iframe").attr("src", $(this).data("pattern"));
+      console.log();
+    });
+		</script>
+</body>
+</html>
